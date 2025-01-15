@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    environment { PATH = "C:\\WINDOWS\\SYSTEM32" }
     stages {
         stage('Print PATH') {
             steps {
