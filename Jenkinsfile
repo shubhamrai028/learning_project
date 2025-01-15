@@ -31,7 +31,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'pytest test.py'
+                bat 'pytest test_function.py'
             }
         }
 
