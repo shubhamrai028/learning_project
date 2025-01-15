@@ -8,14 +8,19 @@ pipeline {
             }
         }
         
+     
+
         stage('Verify Environment') {
             steps {
-                bat 'python --version'
-                bat 'pip --version'
+                bat 'cmd /c dir' 
             }
         }
         
-      
+        stage('Install Dependencies') {
+            steps {
+                bat 'pip install -r requirements.txt'
+            }
+        }
         
         stage('Run Tests') {
             steps {
