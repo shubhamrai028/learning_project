@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/yourusername/my_flask_app.git', credentialsId: 'github-pat'
+                git url: 'https://github.com/shubhamrai028/learning_project.git', credentialsId: 'github-pat'
             }
         }
 
