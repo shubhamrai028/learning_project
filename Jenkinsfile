@@ -1,7 +1,8 @@
-
 pipeline {
     agent any
-    environment { PATH = "C:\\WINDOWS\\SYSTEM32;C:\Users\shubham.rai\AppData\Local\Programs\Python\Python313;C:\Users\shubham.rai\AppData\Local\Programs\Python\Python313\Scripts" }
+    environment { 
+        PATH = "C:\\WINDOWS\\SYSTEM32;C:\\Users\\shubham.rai\\AppData\\Local\\Programs\\Python\\Python313;C:\\Users\\shubham.rai\\AppData\\Local\\Programs\\Python\\Python313\\Scripts" 
+    }
     stages {
         stage('Clone Repository') {
             steps {
@@ -14,7 +15,6 @@ pipeline {
                 bat 'echo %SHELL%'
             }
         }
-
 
         stage('Install Dependencies') {
             steps {
@@ -36,5 +36,4 @@ pipeline {
     }
 }
 
-// k
 
