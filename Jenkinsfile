@@ -8,6 +8,12 @@ pipeline {
             }
         }
 
+        stage('Verify Shell') {
+            steps {
+                bat 'echo %SHELL%'
+            }
+        }
+
         stage('Install Dependencies') {
             steps {
                 bat 'pip install -r requirements.txt'
