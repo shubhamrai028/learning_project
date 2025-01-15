@@ -1,4 +1,3 @@
-Flask==1.1.2
-werkzeug==0.16.1
-jinja2==2.11.3
+Flask==1.1.4
+werkzeug==1.0.1
 pytest
