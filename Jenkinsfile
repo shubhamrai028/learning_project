@@ -22,6 +22,13 @@ pipeline {
             }
         }
         
+        stage('Verify Installation') {
+            steps {
+                bat 'pip show Flask'
+                bat 'pip show werkzeug'
+            }
+        }
+
         stage('Run Tests') {
             steps {
                 bat 'pytest tests/test_app.py'
@@ -35,5 +42,3 @@ pipeline {
         }
     }
 }
-
-
