@@ -1,5 +1,5 @@
 import pytest
-from app import app
+from myapp import app
 
 def test_hello_world():
     response = app.test_client().get('/')
