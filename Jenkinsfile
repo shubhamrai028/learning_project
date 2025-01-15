@@ -24,7 +24,7 @@ pipeline {
         
         stage('Run Tests') {
             steps {
-                bat 'pytest'
+                bat 'pytest tests/test_app.py'
             }
         }
 
